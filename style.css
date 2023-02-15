@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,100&display=swap');
+
+:root {
+    --dark-grey: #64686b;
+    --orange: #f5b150;
+    --brown: #827563;
+    --white: #fff;
+    --font: 'Lato', sans-serif;
+    /* 100 , 100 italic , 300 , 400 */
+}
+
+body {
+    font-family: var(--font);
+}
+
+.calculator-body {
+    /* height: 100%; */
+    width: 20rem;
+    margin: auto;
+    background-color: var(--dark-grey);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1.2rem;
+    border-radius: 30px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.calculator-top {
+    height: 5rem;
+    width: 100%;
+    /* background-color: var(--orange); */
+    text-align: center;
+} 
+
+.calculator-screen {
+   height: 15rem;
+    width: 100%;
+    /* background-color: purple; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+
+
+.result {
+    color: var(--orange);
+    font-size: 5rem;
+    font-weight: 400;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: right;
+    margin: 0;
+    min-height: 6rem;
+}
+
+
+
+
+.prompt {
+    font-size: 2.5rem;
+    color: var(--white);
+    /* border: 1px solid blue; */
+    display: flex;
+    justify-content: right;
+    
+}
+
+
+
+.calculator-buttons {
+    width: 100%;
+    text-align: center;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    gap: 4rem;
+    justify-content: center;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+i {
+    margin: auto 0;
+    color: var(--white);
+    text-align: center;
+}
+
+.action, .button {
+    min-width: 1.8rem;
+    cursor: pointer;
+    color: var(--white);
+    text-align: center;
+    background-color: transparent;
+    border: none;
+}
+
+#c {
+    color: var(--orange);
+}
+
+.bubble {
+    background-color: var(--brown);
+    border-radius: 50%;
+    width: 100px;
+    height: 40px;
+}
+
+.opacity{
+    opacity: 0.5;
+}
+
+.select{
+    font: var(--font);
+    background-color: transparent;
+    border: none;
+    background-color: var(--dark-grey);
+    color: var(--orange);
+    cursor: pointer;
+}
+
+
+
+.option {
+    cursor: pointer;
+    color: var(--white);
+    background-color: var(--dark-grey);
+}
+
+.hide{
+    display: none;
+}
