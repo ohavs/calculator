@@ -20,14 +20,34 @@
 
     <div class="calculator-body">
         <div class="currency-select">
-            <select class="select">
-                <option class="option" value="cal" selected>Calculator</option>
-                <option class="option" value="cur">Currency</option>
-            </select>
+            <button class="switch-btn">Currency</button>
         </div>
 
-        <div class="calculator-top">
+        <div class="calculator-top hide">
+            <!-- <div class="from">
+                <p>from</p>
+                <input class="input" id="from-input" type="text">
+            </div> -->
+            <select name="" id="from">
+                
+            </select>
 
+            <!-- <select name="" id="to">
+
+            </select> -->
+
+            <i class="fa-solid fa-repeat"></i>
+
+            <!-- <div class="to">
+                <p>to</p>
+                <input class="input" id="to-input" type="text">
+            </div> -->
+
+        </div>
+
+        <div class="amount hide">
+            <input type="numbers" id="amount" placeholder="how much?" class="hide">
+            <button class="get-currency hide ">Get</button>
         </div>
 
         <div class="calculator-screen">
@@ -42,34 +62,44 @@
                     <p class="action" id="percentage" onclick="display('%')">%</p>
                     <p id="delete" onclick="deleteNum()"><i class="fa-sharp fa-solid fa-delete-left"></i>
                     </p>
-                    <p class="bubble action" id="divider" onclick="display('/')">/</p>
+                    <p class="bubble action" id="divider" onclick="display('/')">
+                        <i class="fa-solid fa-divide"></i>
+                    </p>
             </div>
             <div class="row">
                 <p class="button" onclick="display('7')">7</p>
                 <p class=" button" onclick="display('8')">8</p>
                 <p class="button" onclick="display('9')">9</p>
-                <p class="bubble action" id="multiplier" onclick="display('*')">x</p>
+                <p class="bubble action" id="multiplier" onclick="display('*')">
+                    <i class="fa-solid fa-xmark"></i>
+                </p>
             </div>
 
             <div class="row">
                 <p class="button" onclick="display('4')">4</p>
                 <p class="button" onclick="display('5')">5</p>
                 <p class="button" onclick="display('6')">6</p>
-                <p class="bubble action" id="minus" onclick="display('-')">-</p>
+                <p class="bubble action" id="minus" onclick="display('-')">
+                    <i class="fa-solid fa-minus"></i>
+                </p>
             </div>
 
             <div class="row">
                 <p class="button" onclick="display('1')">1</p>
                 <p class="button" onclick="display('2')">2</p>
                 <p class="button" onclick="display('3')">3</p>
-                <p class="bubble action" id="plus" onclick="display('+')" onclick="display('+')">+</p>
+                <p class="bubble action" id="plus" onclick="display('+')">
+                    <i class="fa-solid fa-plus"></i>
+                </p>
             </div>
 
             <div class="row">
                 <p class="button action" onclick="display('00')">00</p>
                 <p class="button" onclick="display('0')">0</p>
                 <p class="action" onclick="display('.')">.</p>
-                <p class="bubble action" id="equal" onclick="getResult()">=</p>
+                <p class="bubble action" id="equal" onclick="getResult()">
+                    <i class="fa-solid fa-equals"></i>
+                </p>
             </div>
 
         </div>
